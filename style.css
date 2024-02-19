@@ -69,22 +69,35 @@ img {
   width: 166px;
   height: 166px;
 }
-
+.tabs {
+  position: relative;
+}
+#tab2 {
+  display: none;
+}
+#tab3 {
+  display: none;
+}
+.text-content {
+  margin: 30px 0;
+  position: absolute;
+}
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 15px 25px;
-  display: none;
 }
 
 h1 {
   display: flex;
   justify-content: center;
 }
+#tab1 {
+}
 
-.icons ul {
+.icons {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -95,9 +108,5 @@ h1 {
 i {
   font-size: 80px;
   color: grey;
-}
-
-a {
-  text-decoration: none;
-  color: grey;
+  cursor: pointer;
 }

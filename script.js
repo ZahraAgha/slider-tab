@@ -56,25 +56,25 @@ startAutoplay();
 
 //tabCodes
 function showTab(tabId) {
-    const allContent = document.querySelectorAll(".content")
+    const allContent = document.querySelectorAll(".text-content")
     allContent.forEach(tab => {
         tab.style.display = "none"
     })
 
     const selectedTab = document.getElementById(tabId)
-    selectedTab.style.display = "block"
+    selectedTab.style.display = "flex"
 }
 
 // const allContent = document.querySelectorAll(".content");
 
 document.getElementById("dinner").addEventListener("click", () => {
-    showTab("content")
+    showTab("tab1")
 })
 document.getElementById("breakfast").addEventListener("click", () => {
-    showTab("content")
+    showTab("tab2")
 })
 document.getElementById("lunch").addEventListener("click", () => {
-    showTab("content")
+    showTab("tab3")
 })
 
 
